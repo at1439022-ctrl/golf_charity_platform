@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Golf Charity Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center">
+        <h1 class="text-xl font-black tracking-tighter text-indigo-400">COMMAND CENTER</h1>
+        <div class="flex gap-4 items-center">
+            <span class="text-xs bg-red-500 px-3 py-1 rounded-full font-bold">ADMIN MODE</span>
+            <a href="/logout" class="text-sm opacity-60 hover:opacity-100">Sign Out</a>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+                <span class="text-[10px] uppercase tracking-widest opacity-50">Total Prize Pool</span>
+                <h2 class="text-3xl font-bold mt-2">$1,240.00</h2> </div>
+            <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+                <span class="text-[10px] uppercase tracking-widest opacity-50">Charity Total</span>
+                <h2 class="text-3xl font-bold mt-2 text-indigo-400">$310.50</h2>
+            </div>
+            <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
+                <span class="text-[10px] uppercase tracking-widest opacity-50">Active Heroes</span>
+                <h2 class="text-3xl font-bold mt-2">156</h2>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-indigo-600 p-8 rounded-[2.5rem] shadow-2xl">
+                <h3 class="text-2xl font-bold mb-4">Draw Simulation</h3>
+                <p class="text-indigo-100 mb-6">Test the 5-match jackpot logic before publishing results.</p>
+                <button class="bg-white text-indigo-600 px-8 py-4 rounded-2xl font-black hover:bg-indigo-50 transition-all">
+                    RUN MONTHLY DRAW
+                </button>
+            </div>
+            
+            <div class="bg-white p-8 rounded-[2.5rem] text-slate-900">
+                <h3 class="text-2xl font-bold mb-4">Winner Verification</h3>
+                <p class="text-slate-500 mb-6">Approve or reject score screenshots from potential winners.</p>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200 text-center italic text-slate-400">
+                    No pending verifications.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
